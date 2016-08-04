@@ -147,6 +147,7 @@ margin-right:0px;
 		
 
 	}
+       
 
 
 }
@@ -658,5 +659,22 @@ header > .cs-post-category-solid > a:hover{
     
     margin-top: 15px;
  
+}
+
+.swiper-container{
+    
+    display: none;
+    
+}
+
+.cs-page-title {
+    
+    color: #b61f24 !important;
+    border-left-color: #b61f24;
+    font-size: 20px;
+    border-left-style:solid;
+    font-weight: bold;
+    padding: 3px 0 3px 10px;
+    
 }
 
