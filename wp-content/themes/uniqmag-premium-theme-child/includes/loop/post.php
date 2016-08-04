@@ -134,7 +134,13 @@
                     <div class="cs-post-inner">
                         <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
                         <div class="cs-post-meta cs-clearfix">
-			                <?php 
+			               
+			                <?php if( $df_post->compare( get_the_ID(), 'post_date' ) == "1" ) { ?>
+                            	<span class="cs-post-meta-date">
+                            		<?php the_time(get_option('date_format'));?>
+                            	</span>
+                            <?php } ?>
+                             <?php 
 			                	if( $df_post->compare( get_the_ID(), 'post_author' ) == "1" ) { 
 			                ?>
 			                	<span class="cs-post-meta-author">
@@ -143,11 +149,15 @@
 			                <?php
 			                	} 
 			                ?>
-			                <?php if( $df_post->compare( get_the_ID(), 'post_date' ) == "1" ) { ?>
-                            	<span class="cs-post-meta-date">
-                            		<?php the_time(get_option('date_format'));?>
-                            	</span>
-                            <?php } ?>
+                            
+                                                    <?php
+                                                            $my_excerpt = get_the_excerpt();
+                                                            if ( '' != $my_excerpt ) {
+                                                                    // Some string manipulation performed
+                                                            }
+                                                            echo $my_excerpt; // Outputs the processed value to the page
+                                                    ?>
+                            
                             <?php if( $avarage_rating ) { ?>
 	                            <span class="cs-post-meta-rating" title="<?php printf ( esc_attr__('Rated %1$s out of %2$s','uniqmag'), floatval($avarage_rating[1]), intval($df_ratings::$max_val));?>">
 	                                <span style="width: <?php echo floatval($avarage_rating[0]);?>%"><?php printf ( esc_html__('Rated %1$s out of %2$s','uniqmag'), floatval($avarage_rating[1]), intval($df_ratings::$max_val));?></span>
