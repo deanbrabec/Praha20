@@ -1,0 +1,635 @@
+/*
+ Theme Name:   UniqMag Premium Child Theme
+ Theme URI:    http://uniqmag.different-themes.com/
+ Description:  UniqMag Premium Wordpress Child Theme
+ Author:       Different Themes
+ Author URI:   http://www.different-themes.com/
+ Template:     uniqmag-premium-theme
+ Version:      1.0.0
+ Tags: 
+ Text Domain:  uniqmag-premium-theme-child
+*/
+
+@import url("../uniqmag-premium-theme/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+*{
+
+
+font-family: 'Open Sans', sans-serif;
+
+
+}
+
+
+/* homepage sections*/
+
+/*headline*/
+.cs-post-item .cs-post-inner h3{
+
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+    color:black;
+    margin-top:21px;
+
+}
+
+/*author*/
+.cs-post-meta a{
+
+    font-size: 11px;
+    color:black;
+    font-weight: normal;
+	
+}
+
+.cs-post-meta a::before { 
+    content: " | ";
+}
+
+/*date*/
+.cs-post-meta{
+	
+    font-size: 11px;
+    color:black;
+    font-weight: normal;
+
+}
+
+
+/*box-headline*/
+.cs-post-block-title h4 a{
+  
+   font-size: 18px;
+   font-weight:bold;
+}
+
+/*box-content*/
+.cs-post-format-icon{
+
+   display:none;
+}
+
+.cs-post-category-empty a{
+  
+   color:white !important;
+   background: #8a8b8c;
+   font-size: 7px;
+   padding:3px;
+   font-weight: semi-bold;
+
+}
+
+/*header*/
+.cs-container{
+
+  background-color: white;
+
+}
+#cs-header-style-three #cs-header-menu{
+
+  background-color: white;
+
+}
+#cs-header-style-three #cs-main-navigation .cs-main-navigation > li > a
+{
+	
+  color:black !important;
+  border: 0px;
+  font-size: 12px;
+  font-weight:normal;
+  text-transform: none;
+
+}
+#cs-header-menu-search-button-show{
+
+  display:none;   
+
+}
+#cs-header-style-three #cs-main-navigation{
+
+margin-right:0px;
+
+
+}
+#cs-header-style-three #cs-main-navigation .cs-main-navigation > li > a{
+
+  padding-right:2px;
+
+}
+#cs-main-navigation ul{
+
+  margin-top:10px;
+
+}
+
+@media only screen and (max-width: 1024px) {
+ 
+	#cs-header-style-three #cs-main-navigation{
+
+		float:left;
+
+	}
+
+	
+}
+
+@media only screen and (max-width: 764px) {
+ 
+	#cs-main-navigation .cs-main-navigation{
+
+		background-color:white;
+		text-align:center;
+		margin-bottom:20px;
+		
+
+	}
+
+
+}
+
+
+#cs-header-style-three .cs-toggle-main-navigation{
+
+	color:black;
+}
+
+
+@media only screen and (max-width: 425px) {
+ 
+	#cs-header-menu .cs-container{
+
+		padding:20px 30px 0px 30px;
+		
+
+	}
+	#cs-header-style-three .cs-toggle-main-navigation{
+
+		padding-left:0px;
+			
+	}
+	 #cs-header-style-three{
+	
+		margin-bottom:0px;
+	
+	}
+
+	#cs-header-style-three .cs-toggle-main-navigation{
+
+	       margin-top:-30px;	
+
+	}
+
+	 .search > input{
+
+		width:100% !important;
+		
+
+	}
+
+
+}
+
+
+
+
+/*footer*/
+
+
+	footer{
+		
+		width: 100%;
+		background: #58595B;
+		border-top: 13px solid #F2AE03;
+		min-height: 300px;
+		font-size: 14px;
+		font-weight: normal;
+		padding-bottom: 40px;
+		margin-top:40px;
+	
+	}
+	
+	footer > .container{
+	
+		max-width: 1100px;
+		
+	}
+	
+	.logo{
+	
+		margin-top: -50px;
+		padding-left: 10px;
+	
+	}
+	
+	.footer_menu{
+	
+	
+		max-width: 440px;
+		padding-top: 40px;
+		padding-left: 0px;
+	
+	}
+	
+	.footer_menu > li{
+	
+		display: inline;
+	
+	}
+	
+	.footer_menu > li > a{
+	
+		text-decoration: none;
+		color: #D5D5D6;
+	
+	}
+	
+	.footer_menu > li+li {
+		
+		border-left: 1px solid #D5D5D6;
+		padding-left: 15px;
+		
+	
+	}
+	
+	.footer_menu > li {
+	
+		margin-right: 10px;
+		margin-botom:10px !important;
+	
+	
+	}
+
+.footer_menu > li:hover {
+	
+		text-decoration:underline;	
+	
+	}
+
+	.copyright
+	{
+	
+		margin-top: 30px;
+		color: #D5D5D6;
+	
+	}
+	.center > p{
+	
+		color:#D5D5D6;
+		
+	
+	}
+	.center > h3{
+	
+		font-size: 16px;
+		font-weight: bold;
+		color: #F2AE03;
+		margin-top: 40px;
+	
+	}
+	.center > p{
+	
+		margin-top: 20px;
+	
+	}
+	
+	
+	.search{
+	
+		
+		margin-top: 40px;
+		
+	}
+	
+	.search > input{
+	
+		background-image:url(http://onlinepreview.eu/praha20/wp-content/uploads/2016/08/search.png);
+		background-repeat:no-repeat;
+		background-position:right;
+		border:5px solid white;	
+        	background-clip:border-box;
+		
+		
+	
+	}
+	.right > img{
+	
+		float: right;
+		margin-top: 8em;
+	
+	}
+
+	.pattern{
+	
+		float: right;
+		margin-top: -59px;
+	
+	}
+
+	
+       .search > input{
+
+		width:80%;
+		float:right;
+
+	}
+
+	.clear{
+	
+		clear:both;
+
+	}
+
+
+
+/*sidebar*/
+
+.cs-main-sidebar{
+
+	background: white;
+	padding:17px;
+
+}
+
+.widget-title{
+
+	color:#b61f24 !important;
+	border-left-color: #b61f24;
+	margin-top:10px !important;
+	line-height: 150%;
+
+}
+
+
+.cs-post-excerpt{
+
+	color:black !important;
+	font-size:13px;
+
+}
+
+aside > ul > li > a{
+
+	color:black;
+	text-decoration:none;
+	font-size:14px;
+	font-weight:bold;
+
+
+}
+
+aside > ul > li > a:hover{
+
+	color:black;
+
+
+}
+
+
+
+.yellow{
+
+	background-color: #f2ae03;
+	font-weight:bold;
+	padding:5px 20px 20px 20px;
+	color:black;
+
+}
+
+
+.yellow > h2{
+
+	color: white !important;
+	font-size:20px;
+	border: 0px !important;
+	padding-left: 0px;
+
+}
+
+.grey{
+
+	background-color: #f2ae03 !important;
+	font-weight:bold;
+	padding:5px 20px 20px 20px;
+	color:black;
+	
+
+}
+
+
+.grey > h2{
+
+	color: white !important;
+	font-size:20px;
+	border: 0px !important;
+	padding-left: 0px;
+
+}
+
+.yellow{
+
+	background-color: #58595B !important;
+	font-weight:bold;
+	padding:5px 20px 20px 20px;
+	color:white;
+	
+
+}
+
+
+.grey > h2{
+
+	color: white !important;
+	font-size:20px;
+	border: 0px !important;
+	padding-left: 0px;
+
+}
+
+
+.widget {
+
+	padding:20px;
+	background-color: #eeeeef;
+	padding-top: 5px !important;
+	margin-bottom:17px !important;
+
+}
+
+aside > ul {
+
+	list-style: none;
+	padding-left: 0px !important;
+
+
+}
+
+.cs-post-category-solid a{
+
+	font-size: 7px;
+	padding:3px;
+	margin-left:0px !important;
+
+}
+
+aside {
+
+	margin-top:10px !important;
+
+}
+
+.post-date{
+
+	font-size:11px;
+
+}
+
+.cs-post-category-solid a{
+
+	margin-top:4px;
+
+}
+
+.cs-post-category-solid a:hover{
+
+	color:white !important;
+	background:#8a8b8c !important;
+
+}
+
+.banner{
+
+padding:0px !important;
+
+}
+
+.banner > h2 {
+
+	display:none;
+
+}
+.banner > .dots{
+
+	background: #EEEEEF;
+
+}
+
+/*post*/
+
+.breadcrumb {
+
+	display:none;
+
+}
+
+.cs-single-post-share{
+
+	display:none;
+
+}
+
+.cs-post-single-title{
+
+	margin-left:0px !important;
+	font-size:13px;
+	font-weight: bold;
+
+}
+.cs-post-single-title h1{
+
+	font-size:21px;
+	font-weight: bold;
+	color:black;
+
+}
+
+.cs-single-post-paragraph{
+
+	font-size:15px;
+	font-weight:normal;
+
+}
+
+
+.cs-single-post-paragraph > p::first-letter { 
+    font-size:15px;
+    font-weight:normal;
+    padding:0px;
+    line-height: normal;
+    margin: 0!important;
+}
+
+
+.cs-single-post-controls {
+
+display:none;
+
+}
+
+.author_box{
+
+display:none;
+
+}
+
+.cs-single-related-aticles{
+
+
+display:none;
+
+}
+
+.cs-comments-area{
+
+	display:none;
+
+}
+
+.comment-respond{
+
+display:none;
+
+}
+
+.cs-single-post-paragraph > p > em{
+
+
+	color:#F2AE03;
+	font-weight:bold;	
+
+}
+
+.cs-post-category-solid a{
+
+	font-size:11px;
+	margin-left:5px;
+	padding:4px;
+
+}
+
+
+/* Post */
+
+header > .cs-post-category-solid > a{
+
+    color: #b61f24 !important;
+    border-left-color: #b61f24 !important;
+    border-left-width;
+    background-color:white !important; 
+    border-left-style:solid;
+    font-size:15px;
+    margin-right:10px;
+    padding: 3px 0 3px 10px;
+
+}
+
+header > .cs-post-category-solid > a:hover{
+
+    background-color:white !important;
+    color:#b61f24 !important;
+
+}
+
