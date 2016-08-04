@@ -79,7 +79,7 @@ font-family: 'Open Sans', sans-serif;
    background: #8a8b8c;
    font-size: 7px;
    padding:3px;
-   font-weight: semi-bold;
+   font-weight: normal;
 
 }
 
@@ -258,7 +258,7 @@ margin-right:0px;
 	.footer_menu > li {
 	
 		margin-right: 10px;
-		margin-botom:10px !important;
+		margin-bottom:10px !important;
 	
 	
 	}
@@ -617,7 +617,6 @@ header > .cs-post-category-solid > a{
 
     color: #b61f24 !important;
     border-left-color: #b61f24 !important;
-    border-left-width;
     background-color:white !important; 
     border-left-style:solid;
     font-size:15px;
@@ -631,5 +630,33 @@ header > .cs-post-category-solid > a:hover{
     background-color:white !important;
     color:#b61f24 !important;
 
+}
+
+
+/* Post */
+.foogallery-container{
+    
+    padding: 25px;
+    background-color: #EEEEEF;
+
+    
+}
+
+.foogallery-container::before{
+    
+    content: "Galerie";
+    color: #b61f24 !important;
+    border-left-color: #b61f24;
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+    margin-right: 100%;
+ 
+}
+
+.foogallery-container > a{
+    
+    margin-top: 15px;
+ 
 }
 
