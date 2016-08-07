@@ -32,7 +32,7 @@
         </div>
     <?php } ?>
 
-    <div class="cs-col cs-col-6-of-12">
+    <div class="cs-col cs-col-12-of-12">
         <?php if ($my_query->have_posts()) : $my_query->the_post(); ?>
             <?php 
                 $DF_builder->set_double($my_query->post->ID);
