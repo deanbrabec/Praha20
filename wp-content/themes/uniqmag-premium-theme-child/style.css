@@ -697,7 +697,34 @@ header > .cs-post-category-solid > a:hover{
     
 }
 
-.category .cs-post-category-border{
+.category .cs-post-category-border:first-child{
     
     display:none;
+}
+
+.category .cs-post-category-border{
+    
+   
+    
+}
+
+. category .cs-post-category-solid a:hover{
+
+	color:white !important;
+	background:#8a8b8c !important;
+
+}
+
+
+.category .cs-post-meta span{
+    
+    display:none;
+    
+}
+
+.category .cs-post-meta-author
+{
+    
+    display:none;
+    
 }
