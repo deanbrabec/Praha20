@@ -8,7 +8,12 @@
 
 	//counter
 	$count = 1;
-	if(is_category()) {
+        if(is_home() || is_front_page())
+        {
+            $blogStyle = 7;
+            $sidebar = uniqmag_different_themes_get_custom_option( get_cat_id( single_cat_title("",false) ), 'sidebar_select', false );
+        }
+	else if(is_category()) {
 		$blogStyle = uniqmag_different_themes_get_custom_option( get_cat_id( single_cat_title("",false) ), 'blogStyle', false );
 		$sidebar = uniqmag_different_themes_get_custom_option( get_cat_id( single_cat_title("",false) ), 'sidebar_select', false );
 	} else if( is_tax() || is_tag() ) {
@@ -44,6 +49,9 @@
 		case '6':
 			$post_wrap_class = "cs-row";
 			break;
+                case '7':
+                        $post_wrap_class = "cs-row";
+			break;
 	}
 
 
@@ -76,6 +84,10 @@
 				$postsInRow = 2;
 				break;
 			case '6':
+				$post_class = "cs-col cs-col-6-of-12";
+				$postsInRow = 2;
+				break;
+                        case '7':
 				$post_class = "cs-col cs-col-6-of-12";
 				$postsInRow = 2;
 				break;
