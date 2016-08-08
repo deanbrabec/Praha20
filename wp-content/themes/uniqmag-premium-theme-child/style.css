@@ -696,3 +696,8 @@ header > .cs-post-category-solid > a:hover{
     line-height: 130%;
     
 }
+
+.category .cs-post-category-border{
+    
+    display:none;
+}

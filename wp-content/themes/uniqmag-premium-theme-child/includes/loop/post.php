@@ -155,7 +155,7 @@
                              <?php 
 			                	if( $df_post->compare( get_the_ID(), 'post_author' ) == "1" ) { 
 			                ?>
-			                	 <span class="cs-post-meta-author">
+			                	<span class="cs-post-meta-author">
 			                		<?php echo the_author_posts_link(); ?>
 			                	</span>
 			                <?php
@@ -171,7 +171,7 @@
                                                     ?>
                             
                             <?php if( $df_post->compare( get_the_ID(), 'post_category' ) == "1" && $categories ) { ?>
-		                        <div class="cs-post-category-border cs-clearfix">
+		                        <div class="cs-post-category-border cs-clearfix new-category">
 		                        	<?php 
 		                        		foreach($categories as $cat) {
 		                        			$category_color = $df_post->get_color($cat->term_id,"category", false);
