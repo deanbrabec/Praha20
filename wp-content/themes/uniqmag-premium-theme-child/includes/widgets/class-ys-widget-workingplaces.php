@@ -90,7 +90,9 @@ class YS_Widget_Working_Places extends WP_Widget {
 				<div class="post-date"><?php echo get_the_date(); ?></div>
                             <?php endif; ?>
                             <a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a>
-			
+                            <?php if(get_field('nazev_společnosti')) : ?>
+                                <?php echo get_field('nazev_společnosti'); ?>
+                            <?php endif; ?>
                             <?php if ( $show_cat && $categories && !empty($categories) ) : ?>
                                 <div class="cs-post-category-solid cs-clearfix">
                                     <?php 
@@ -99,6 +101,7 @@ class YS_Widget_Working_Places extends WP_Widget {
                                         <a href="<?php echo esc_url(get_category_link($cat->term_id));?>">
                                             <?php echo esc_html(get_cat_name($cat->term_id));?>
                                         </a>
+                                    
                                     <?php } ?>
                                 </div>
                             <?php endif; ?>
