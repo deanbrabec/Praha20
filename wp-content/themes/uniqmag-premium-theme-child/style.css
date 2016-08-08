@@ -771,3 +771,45 @@ header > .cs-post-category-solid > a:hover{
     color:black;
 }
 
+.action-date{
+    
+    font-size:18px;
+    color: #B61F24;
+    
+}
+
+.single-action .cs-post-meta{
+    
+    display:none;
+}
+
+.single-action .entry_title{
+    
+    font-size: 30px;
+} 
+
+.single-post .action-date{
+    
+    display:none;
+}
+
+.single-workingplaces .action-date{
+    
+    display:none;
+}
+
+.single-workingplaces .cs-post-meta{
+    
+    display:none;
+}
+.workingplaces-company{
+    
+        font-size: 18px;
+        color: #B61F24;
+}
+.slider{
+    
+    margin-bottom: 0px;
+    padding: 0px;
+    padding-top: 0px !important;
+}

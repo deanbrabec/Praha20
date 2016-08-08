@@ -14,7 +14,7 @@
  *
  * @see WP_Widget
  */
-class YS_Widget_Actions extends WP_Widget {
+class YS_Widget_Working_Places extends WP_Widget {
     
 	/**
 	 * Sets up a new Recent Posts widget instance.
@@ -24,11 +24,11 @@ class YS_Widget_Actions extends WP_Widget {
 	 */
 	public function __construct() {
 		$widget_ops = array(
-			'classname' => 'ys_widget_actions',
+			'classname' => 'ys_widget_working_places',
 			'customize_selective_refresh' => true,
 		);
-		parent::__construct( 'ys-actions', __( 'YS Actions' ), $widget_ops );
-		$this->alt_option_name = 'ys_widget_actions';
+		parent::__construct( 'ys-working-places', __( 'YS Working Places' ), $widget_ops );
+		$this->alt_option_name = 'ys_widget_working_places';
 	}
 
 	/**
@@ -46,7 +46,7 @@ class YS_Widget_Actions extends WP_Widget {
 			$args['widget_id'] = $this->id;
 		}
 
-		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Akce' );
+		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Pracovní místa' );
 
 		/** This filter is documented in wp-includes/widgets/class-wp-widget-pages.php */
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
@@ -91,13 +91,17 @@ class YS_Widget_Actions extends WP_Widget {
                             <?php endif; ?>
                                 <div class="workingplaces-title"><a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a></div>
                        
-                                <?php if(get_field('nazev_společnosti')) : ?>
+                       
+                                
+                             
+                                 <?php if(get_field('nazev_společnosti')) : ?>
                                 <?php echo get_field('nazev_společnosti'); ?><br>
                                 <span class="workingplaces-date"><?php echo get_the_date(); ?></span>
-                        
+                                
+                                 <?php endif; ?>
                        
                   
-                            <?php endif; ?>
+                            
                             <?php if ( $show_cat && $categories && !empty($categories) ) : ?>
                                 <div class="cs-post-category-solid cs-clearfix">
                                     <?php 

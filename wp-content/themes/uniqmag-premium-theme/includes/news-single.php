@@ -59,6 +59,8 @@
 
 	        <!-- Single post -->
 	        <article <?php post_class($post_class); ?>>
+                    <?php echo get_field('datum_akce'); ?>
+                    
 	            <!-- Post share -->
 	            <?php get_template_part(UNIQMAG_DIFFERENT_THEME_SINGLE."post-share"); ?>
 	            <!-- Post content -->
