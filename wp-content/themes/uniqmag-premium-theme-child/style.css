@@ -675,6 +675,7 @@ header > .cs-post-category-solid > a:hover{
     border-left-style:solid;
     font-weight: bold;
     padding: 3px 0 3px 10px;
+    text-transform: uppercase;
     
 }
 
@@ -702,16 +703,24 @@ header > .cs-post-category-solid > a:hover{
     display:none;
 }
 
-.category .cs-post-category-border{
+.category .cs-post-category-border a{
     
-   
+   color:white !important;
+   background:#8a8b8c !important;
+   margin-top: 35px;
     
 }
 
-. category .cs-post-category-solid a:hover{
+.category .cs-post-category-border a:hover{
 
 	color:white !important;
 	background:#8a8b8c !important;
+
+}
+
+.category .cs-post-category-border a::before{
+
+	display: none;
 
 }
 
