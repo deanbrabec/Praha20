@@ -675,6 +675,7 @@ header > .cs-post-category-solid > a:hover{
     border-left-style:solid;
     font-weight: bold;
     padding: 3px 0 3px 10px;
+    text-transform: uppercase;
     
 }
 
@@ -706,6 +707,7 @@ header > .cs-post-category-solid > a:hover{
     
    color:white !important;
    background:#8a8b8c !important;
+   margin-top: 35px;
     
 }
 
@@ -713,6 +715,12 @@ header > .cs-post-category-solid > a:hover{
 
 	color:white !important;
 	background:#8a8b8c !important;
+
+}
+
+.category .cs-post-category-border a::before{
+
+	display: none;
 
 }
 
