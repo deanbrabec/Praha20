@@ -743,3 +743,31 @@ header > .cs-post-category-solid > a:hover{
     
     text-decoration: none;
 }
+
+.widget-workingplaces li{
+    
+   margin-bottom: 10px;
+}
+
+.workingplaces-date{
+    
+   font-size: 10px;
+}
+.workingplaces-title{
+    
+    display:block;
+    width: 100%;
+}
+
+.workingplaces-title a{
+    
+    font-size: 14px;
+    color:black;
+    font-weight: bold;
+}
+
+.workingplaces-title a:hover{
+    
+    color:black;
+}
+

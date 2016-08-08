@@ -10,6 +10,11 @@ add_action( 'widgets_init', function(){
 	register_widget( 'YS_Widget_Working_Places' );
 });
 
+include_once get_stylesheet_directory() . '/includes/widgets/class-ys-widget-actions.php';
+add_action( 'widgets_init', function(){
+	register_widget( 'YS_Widget_Actions' );
+});
+
 function ys_enqueue_scripts(){
     wp_enqueue_script('ys-scripts', get_stylesheet_directory_uri(). '/js/scripts.js', array('jquery'), null, true);
 }
