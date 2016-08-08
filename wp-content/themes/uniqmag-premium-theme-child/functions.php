@@ -24,6 +24,7 @@ function create_posttype() {
 			'has_archive' => true,
                         'supports' => array( 'title','editor'),
                         'menu_icon' => 'dashicons-admin-users',
+                        'rewrite' => array('slug' => 'pracovni-mista'),
 		)
 	);
         
@@ -38,9 +39,21 @@ function create_posttype() {
 			'has_archive' => true,
                         'supports' => array( 'title','editor'),
                         'menu_icon' => 'dashicons-format-audio',
+                        'rewrite' => array('slug' => 'akce'),
 		)
 	);
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
+
+/**
+ * Filter the except length to 20 characters.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function ys_custom_excerpt_length( $length ) {
+    return 45;
+}
+add_filter( 'excerpt_length', 'ys_custom_excerpt_length', 999 );
 
