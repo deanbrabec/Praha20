@@ -702,13 +702,14 @@ header > .cs-post-category-solid > a:hover{
     display:none;
 }
 
-.category .cs-post-category-border{
+.category .cs-post-category-border a{
     
-   
+   color:white !important;
+   background:#8a8b8c !important;
     
 }
 
-. category .cs-post-category-solid a:hover{
+.category .cs-post-category-border a:hover{
 
 	color:white !important;
 	background:#8a8b8c !important;
