@@ -738,3 +738,8 @@ header > .cs-post-category-solid > a:hover{
     display:none;
     
 }
+
+.home .cs-post-meta-author a:hover{
+    
+    text-decoration: none;
+}

@@ -55,7 +55,10 @@
                     ?>
 
                         <!-- Post item 50% -->
+                       
                         <div class="cs-post-item<?php echo esc_attr($class);?>">
+                            
+                             <a href="<?php the_permalink();?>">
                             <div class="cs-post-thumb">
                                 <?php
                                     if( $df_post->compare( get_the_ID(), 'post_category' ) == "1" && $categories && ( $df_post->get_cat_icon($categories[$cat_id]->term_id) && $df_post->get_cat_icon($categories[$cat_id]->term_id) != "no-icon" ) ) { 
@@ -71,6 +74,7 @@
                                     <?php $df_post->image_html( get_the_ID(), 510, 350, null, THEME_NAME.'_homepage_image', true );?>
                                 </a>
                             </div>
+                             </a>
                             <div class="cs-post-inner">
                                 <h3>
                                     <a href="<?php the_permalink();?>">
@@ -94,8 +98,11 @@
                                         } 
                                     ?>
                                 </div>
+                                
                             </div>
+                                
                         </div>
+                        
 
                     <?php $counter++; ?>
                     <?php endwhile; ?>
