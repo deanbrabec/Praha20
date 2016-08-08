@@ -64,7 +64,7 @@
 
 		switch ($blogStyle) {
 			case '1':
-				$post_class = "cs-col cs-col-6-of-12";
+				$post_class = "cs-col cs-col-12-of-12";
 				$postsInRow = 2;
 				break;
 			case '2':

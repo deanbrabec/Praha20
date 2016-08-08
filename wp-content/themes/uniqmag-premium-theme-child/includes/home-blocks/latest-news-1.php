@@ -13,7 +13,7 @@
 
 <div class="cs-row">
     <?php if($title) { ?>
-        <div class="cs-col cs-col-12-of-12">
+        <div class="cs-col cs-col-6-of-12">
             <!-- Post block title -->
             <div class="cs-post-block-title" style="border-left-color: #<?php echo esc_attr($color);?>;">
                 <h4>
