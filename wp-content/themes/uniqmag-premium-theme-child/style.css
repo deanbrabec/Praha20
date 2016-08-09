@@ -643,6 +643,13 @@ header > .cs-post-category-solid > a:hover{
     
 }
 
+.foogallery-container a{
+    
+   margin-top:20px;
+
+    
+}
+
 .foogallery-container::before{
     
     content: "Galerie";
@@ -652,12 +659,6 @@ header > .cs-post-category-solid > a:hover{
     font-size: 20px;
     float: left;
     margin-right: 100%;
- 
-}
-
-.foogallery-container > a{
-    
-    margin-top: 15px;
  
 }
 
@@ -838,28 +839,25 @@ header > .cs-post-category-solid > a:hover{
     float:left;
 }
 
-.foogallery-album-gallery-list .foogallery-pile .foogallery-pile-inner{
+.container-hpgallery li{
     
-    border:none !important;
-
+    display:inline;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    
 }
 
-.foogallery-album-gallery-list .foogallery-pile h3 {
+.name{
     
-    position: static !important;
-    font-size: 20px;
+    font-size:15px;
     font-weight: bold;
+    color:black;
+    display:block;
+    padding-top:10px !important;
 }
 
-.foogallery-album-gallery-list .foogallery-pile h3 span{
-    
-    display:none !important;
-}
 
-.foogallery-album-gallery-list .foogallery-pile{
-    
-    position: static !important;
-}
 
 
 

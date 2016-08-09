@@ -51,12 +51,43 @@ Template Name: Drag & Drop Page Builder
         
         <div class="container container-hpgallery">
             <h2>Fotogalerie</h2>
-            <div class="container-hpgallery-block">
-                    <?php echo do_shortcode( '[foogallery-album id="63"]' );?>
-            </div>
-            <div class="container-hpgallery-block">
-                    <?php echo do_shortcode( '[foogallery-album id="63"]' );?>
-            </div>
+                    <?php
+
+$gal = foogallery_get_all_galleries();
+            $args = array(
+                'width'  => 235,
+                'height' => 156,
+                'crop'   => true,
+            );
+            
+            $tmp = 0;
+            
+            foreach ($gal as $g) if ($tmp < 4){
+                $usages = $g->find_usages();
+                $src = apply_filters('foogallery_attachment_resize_thumbnail', $g->featured_image_src('full'), $args, $g);
+                $tmp += 1;
+                ?>
+                <li>
+                    <a href="<?php echo get_the_permalink($usages[0]) ?>">
+                        <img src="<?php echo $src ?>"/>
+
+                        <div class="hover_overlay">
+                            <div class="centered">
+                                <span class="name"><?php echo $g->name ?></span>
+                                <span class="line"></span>
+                                <span
+                                    class="description"><?php echo $g->settings['masonry-direction-hover_description'] ?></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+            <?php
+            }
+            
+            ?>
        </div>
+        
+
         
 <?php get_footer();?>
