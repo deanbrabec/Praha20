@@ -304,9 +304,9 @@ class Simple_Slider_Admin extends Simple_Slider {
 		
 		#slider_holder #prevnext a { position: absolute; display: block; width: 38px; height: 48px; outline: none; border: none;  }
 	
-		#slider_holder #prevnext a#prev { left: 0px; background: url(". WP_CONTENT_URL ."/plugins/simple-slider/images/left.png) no-repeat; }
+		#slider_holder #prevnext a#prev { left: 0px; background: url(". WP_CONTENT_URL ."/uploads/2016/08/left.png) no-repeat; }
 		
-		#slider_holder #prevnext a#next { right: 0px; background: url(". WP_CONTENT_URL ."/plugins/simple-slider/images/right.png) no-repeat; }";
+		#slider_holder #prevnext a#next { right: 0px; background: url(". WP_CONTENT_URL ."/uploads/2016/08/right.png) no-repeat; }";
 				
 		$output .= "</style>";		
 				

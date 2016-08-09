@@ -24,6 +24,7 @@
 	<?php get_template_part(UNIQMAG_DIFFERENT_THEME_LOOP."loop-start"); ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+
             <!-- Post header -->
             <header class="cs-post-single-title">
             	<?php if( $df_post->compare( get_the_ID(), 'post_category' ) == "1" && $categories ) { ?>

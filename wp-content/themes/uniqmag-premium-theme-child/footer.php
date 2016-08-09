@@ -12,10 +12,9 @@
 
 
 
-
 <footer>
-
 	<div class="container">
+            
 		<img class="pattern" src="http://onlinepreview.eu/praha20/wp-content/uploads/2016/08/paticka_obili.png" alt="logo">
 		  <div class="col-sm-4">
 			  <img class="logo" src="http://onlinepreview.eu/praha20/wp-content/uploads/2016/08/erb.png" alt="logo">

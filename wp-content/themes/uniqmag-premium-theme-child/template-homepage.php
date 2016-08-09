@@ -20,11 +20,16 @@ Template Name: Drag & Drop Page Builder
 		} 
 		if(!$pagebuilder_layout && get_post_meta ( Different_Themes()->page_id(), "_".THEME_NAME."_sliderStyle", true ) == "1") {
 	?>
+
 		<div class="row">
 			<div class="col col_12_of_12">
 				<?php get_template_part(UNIQMAG_DIFFERENT_THEME_SLIDERS."main-slider");?>
 			</div>
-		</div>		
+                     
+		</div>	
+
+
+                
 	<?php
 		}
 		$DF_builder = new different_themes_home_builder;  
@@ -40,5 +45,18 @@ Template Name: Drag & Drop Page Builder
 
 	?> 
 	&nbsp;
+        
+        
 <?php get_template_part(UNIQMAG_DIFFERENT_THEME_LOOP."loop-end"); ?>
+        
+        <div class="container container-hpgallery">
+            <h2>Fotogalerie</h2>
+            <div class="container-hpgallery-block">
+                    <?php echo do_shortcode( '[foogallery-album id="63"]' );?>
+            </div>
+            <div class="container-hpgallery-block">
+                    <?php echo do_shortcode( '[foogallery-album id="63"]' );?>
+            </div>
+       </div>
+        
 <?php get_footer();?>

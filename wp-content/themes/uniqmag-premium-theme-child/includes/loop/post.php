@@ -57,6 +57,10 @@
 
 	?>
 		<div class="<?php echo esc_attr($post_wrap_class); ?>">
+                    
+                    
+                    
+                    
 	<?php
 
 	if (have_posts()) : while (have_posts()) : the_post();
@@ -117,6 +121,7 @@
         <div <?php post_class($post_class); ?> id="post-<?php the_ID(); ?>">
             <!-- Block layout 3 -->
             <div class="cs-post-block-layout-3">
+                
                 <!-- Post item -->
                 <div class="cs-post-item">
                 	<?php if( $df_post->is_image(get_the_ID()) == true ) { ?>
@@ -204,6 +209,7 @@
         </div>
 
     <?php } elseif( $blogStyle=="3") { ?>
+                    
         <!-- Post item -->
         <div <?php post_class($post_class); ?> id="post-<?php the_ID(); ?>">
             <?php if( $df_post->is_image(get_the_ID()) == true ) { ?>
@@ -260,12 +266,15 @@
                 </div>
 				<p class="cs-post-excerpt">
 					<?php echo esc_html($df_post->get_the_excerpt(20)); ?>
+                                         
 				</p>
                 <a class="cs-post-read-more" href="<?php the_permalink();?>">
                 	<?php esc_html_e("Read more",'uniqmag');?> <i class="fa fa-angle-double-right"></i>
                 </a>
             </div>
         </div>
+        
+
 
     <?php } elseif( $blogStyle == "4" ) { ?>
     	<div class="cs-col cs-col-6-of-12">
@@ -432,12 +441,16 @@
         </div>
 
     <?php } ?>
+        
+
 
 <?php if($postsInRow != false && $count%$postsInRow==0 && $count!=$wp_query->post_count) { ?>
+        
 
 </div>
 <!-- Row -->
 <div class="<?php echo esc_attr($post_wrap_class); ?>">
+  
 
 <?php } ?>
 		<?php $count++; ?>
@@ -447,4 +460,6 @@
 
 
 		</div>
+
+
 

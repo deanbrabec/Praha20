@@ -813,3 +813,53 @@ header > .cs-post-category-solid > a:hover{
     padding: 0px;
     padding-top: 0px !important;
 }
+
+
+.container-hpgallery{
+    
+   max-width:1065px;
+   padding-bottom: 50px;
+}
+
+.container-hpgallery h2{
+    
+    color: #b61f24 !important;
+    border-left-color: #b61f24;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-left-color: #b61f24 !important;
+    border-left-style:solid;
+    padding: 3px 0 3px 10px;
+ 
+}
+.container-hpgallery-block{
+    
+    float:left;
+}
+
+.foogallery-album-gallery-list .foogallery-pile .foogallery-pile-inner{
+    
+    border:none !important;
+
+}
+
+.foogallery-album-gallery-list .foogallery-pile h3 {
+    
+    position: static !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.foogallery-album-gallery-list .foogallery-pile h3 span{
+    
+    display:none !important;
+}
+
+.foogallery-album-gallery-list .foogallery-pile{
+    
+    position: static !important;
+}
+
+
+
