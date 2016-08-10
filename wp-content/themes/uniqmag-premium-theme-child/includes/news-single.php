@@ -66,14 +66,13 @@
                 <div class="action-date">
                  
                 <?php
-                                    $date = new DateTime(get_field('datum_akce'));
-                                    echo $date->format('d. m. Y');
+                        $date = new DateTime(get_field('datum_akce'));
+                         echo $date->format('d. m. Y');
                 ?>
                     
                     
                 <?php
-
-                        
+                       
                         $datestr=get_field('datum_akce');
                         $date=strtotime($datestr);
 
@@ -95,8 +94,7 @@
                        
                        else
                          echo "- za $days dní<br />";
-                       
-                       
+                               
                         
                 ?>
                     

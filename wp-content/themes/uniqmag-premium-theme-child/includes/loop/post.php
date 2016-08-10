@@ -121,7 +121,6 @@
         <div <?php post_class($post_class); ?> id="post-<?php the_ID(); ?>">
             <!-- Block layout 3 -->
             <div class="cs-post-block-layout-3">
-                
                 <!-- Post item -->
                 <div class="cs-post-item">
                 	<?php if( $df_post->is_image(get_the_ID()) == true ) { ?>
