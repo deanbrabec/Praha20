@@ -55,6 +55,11 @@
                 <div class="cs-post-block-layout-3">
                     <!-- Post item -->
                     <div class="cs-post-item<?php echo esc_attr($item_class);?>">
+                        <?php if(get_post_type(get_the_ID()) === 'workingplaces') : ?>
+                            <?php if(get_field('nazev_spolecnosti', get_the_ID())) : ?>
+                                <?php the_field('nazev_spolecnosti', get_the_ID()); ?>
+                            <?php endif; ?>
+                        <?php endif; ?>
                         <?php if( $df_post->is_image() ) { ?>
                             <div class="cs-post-thumb">
                                 <?php if( $df_post->compare( get_the_ID(), 'post_category' ) == "1" && $categories ) { ?>
