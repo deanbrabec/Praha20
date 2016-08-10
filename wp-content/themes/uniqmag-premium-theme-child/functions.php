@@ -36,7 +36,7 @@ function create_posttype() {
 			),
 			'public' => true,
 			'has_archive' => true,
-                        'supports' => array( 'title','editor'),
+                        'supports' => array( 'title','editor','custom-fields'),
                         'menu_icon' => 'dashicons-admin-users',
                         'rewrite' => array('slug' => 'pracovni-mista'),
                         'taxonomies' => array('post_tag'),
