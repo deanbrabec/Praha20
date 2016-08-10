@@ -55,6 +55,7 @@
                 <div class="cs-post-block-layout-3">
                     <!-- Post item -->
                     <div class="cs-post-item<?php echo esc_attr($item_class);?>">
+<<<<<<< HEAD
                     
                         <?php if(get_post_type(get_the_ID()) === 'workingplaces') : ?>
                              <?php if(get_field('spolecnost', get_the_ID())) : ?>
@@ -62,6 +63,8 @@
                             <?php endif; ?>
                         <?php endif; ?>
                         
+=======
+>>>>>>> origin/master
                         <?php if( $df_post->is_image() ) { ?>
                             <div class="cs-post-thumb">
                                 <?php if( $df_post->compare( get_the_ID(), 'post_category' ) == "1" && $categories ) { ?>
@@ -96,9 +99,13 @@
                                     <?php the_title();?>
                                 </a>
                             </h3>
+<<<<<<< HEAD
                             
                                                       
                             
+=======
+
+>>>>>>> origin/master
                             <div class="cs-post-meta cs-clearfix">
                                 <?php if( $df_post->compare( get_the_ID(), 'post_date' ) == "1" ) { ?>
                                     <span class="cs-post-meta-date">
