@@ -60,7 +60,7 @@
                 </div>
                 <!--TODO: udělat zde tagy-->
                 <div class="workingplaces-company">
-                <?php echo get_field('nazev_společnosti'); ?>
+                     <?php echo get_field('spolecnost'); ?>
                 </div>
                 
                 <div class="action-date">
