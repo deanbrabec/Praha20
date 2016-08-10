@@ -55,7 +55,7 @@
                 <div class="cs-post-block-layout-3">
                     <!-- Post item -->
                     <div class="cs-post-item<?php echo esc_attr($item_class);?>">
-                     
+                     viueie
                         <?php if(get_post_type(get_the_ID()) === 'workingplaces') : ?>
                             <?php if(get_field('spolecnost', get_the_ID())) : ?>
                                 <?php the_field('spolecnost', get_the_ID()); ?>
