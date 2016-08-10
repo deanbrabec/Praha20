@@ -992,11 +992,6 @@ header > .cs-post-category-solid > a:hover{
     display: none;
 }
 
-.post-type-archive-workingplaces .cs-page-title{
-    
-    display:none;
-}
-
 .post-type-archive-workingplaces .cs-post-meta-date{
     
     display:none;
@@ -1009,5 +1004,48 @@ header > .cs-post-category-solid > a:hover{
 
 .post-type-archive-workingplaces .cs-post-inner h3{
     
-    font-size:15px;
+    display:block;
+    font-size:20px;
+}
+
+
+.post-type-archive-workingplaces .workingplaces-company{
+    
+    font-weight: bold;
+}
+
+.post-type-archive-workingplaces .cs-post-meta{
+    
+    display: none;
+}
+
+.post-type-archive-action .cs-post-meta-author{
+    
+    display:none;
+}
+
+.post-type-archive-action .cs-post-meta-date{
+    
+    display:none;
+}
+
+.post-type-archive-action .cs-post-inner h3{
+    
+    display:block;
+    font-size:20px;
+}
+
+.post-type-archive-action .workingplaces-company{
+    
+    font-weight: bold;
+}
+
+.post-type-archive-action .cs-page-title{
+    
+    display: none;
+}
+
+.post-type-archive-workingplaces .cs-page-title{
+    
+    display: none;
 }
