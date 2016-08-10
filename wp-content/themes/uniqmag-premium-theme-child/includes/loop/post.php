@@ -150,6 +150,13 @@
                     <?php } ?>
                     <div class="cs-post-inner">
                         <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+                        <p>
+                            <?php if(get_post_type(get_the_ID()) === 'workingplaces') : ?>
+                                <?php if(get_field('spolecnost', get_the_ID())) : ?>
+                                    <?php echo get_field('spolecnost', get_the_ID()); ?>
+                                <?php endif; ?>
+                            <?php endif; ?>
+                        </p>
                         <div class="cs-post-meta cs-clearfix">
 			               
 			                <?php if( $df_post->compare( get_the_ID(), 'post_date' ) == "1" ) { ?>
@@ -243,6 +250,7 @@
                 		<?php the_title();?>
                 	</a>
                 </h3>
+                
                 <div class="cs-post-meta cs-clearfix">
 	                <?php 
 	                	if( $df_post->compare( get_the_ID(), 'post_author' ) == "1" ) { 
