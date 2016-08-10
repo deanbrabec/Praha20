@@ -69,38 +69,7 @@
                         $date = new DateTime(get_field('datum_akce'));
                          echo $date->format('d. m. Y');
                 ?>
-                    
-                    
-                <?php
-                       
-                        $datestr=get_field('datum_akce');
-                        $date=strtotime($datestr);
-
-                        
-                        $diff=$date-time();
-                        $days=floor($diff/(60*60*24))+1;
-                        
-                       if ($days == 1)
-                             echo "- již zítra<br />";
-                       
-                       else if($days == 2 || 3 || 4)
-                             echo "- za $days dny<br />"; 
-                       
-                       else if($days == 0)
-                             echo "- dnes<br />"; 
-                       
-                       else if($days < 0)
-                           echo "Již proběhlo";
-                       
-                       else
-                         echo "- za $days dní<br />";
-                               
-                        
-                ?>
-                    
-                
-                               
-               
+  
                 </div>
             </header>
 
