@@ -83,11 +83,16 @@
                             </div>
                         <?php } ?>
                         <div class="cs-post-inner">
+                          
+                            
                             <h3>
                                 <a href="<?php the_permalink();?>">
                                     <?php the_title();?>
                                 </a>
                             </h3>
+                            
+                                                       
+                            
                             <div class="cs-post-meta cs-clearfix">
                                 <?php if( $df_post->compare( get_the_ID(), 'post_date' ) == "1" ) { ?>
                                     <span class="cs-post-meta-date">

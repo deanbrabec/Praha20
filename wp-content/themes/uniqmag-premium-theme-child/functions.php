@@ -39,6 +39,7 @@ function create_posttype() {
                         'supports' => array( 'title','editor'),
                         'menu_icon' => 'dashicons-admin-users',
                         'rewrite' => array('slug' => 'pracovni-mista'),
+                        'taxonomies' => array('post_tag'),
 		)
 	);
         

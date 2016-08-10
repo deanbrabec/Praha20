@@ -190,6 +190,10 @@ margin-right:0px;
 		
 
 	}
+        .container-hpgallery{
+            
+            max-width: 290px !important;
+        }
 
 
 }
@@ -566,7 +570,7 @@ padding:0px !important;
 
 .cs-single-post-controls {
 
-display:none;
+
 
 }
 
@@ -578,8 +582,8 @@ display:none;
 
 .cs-single-related-aticles{
 
+display: none;
 
-display:none;
 
 }
 
@@ -599,7 +603,7 @@ display:none;
 
 
 	color:#F2AE03;
-	font-weight:bold;	
+	font-weight:normal;	
 
 }
 
@@ -740,9 +744,10 @@ header > .cs-post-category-solid > a:hover{
     
 }
 
-.home .cs-post-meta-author a:hover{
+.cs-post-meta-author a:hover{
     
     text-decoration: none;
+    color: #58595B;
 }
 
 .widget-workingplaces li{
@@ -827,7 +832,7 @@ header > .cs-post-category-solid > a:hover{
     color: #b61f24 !important;
     border-left-color: #b61f24;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     border-left-color: #b61f24 !important;
     border-left-style:solid;
@@ -857,7 +862,152 @@ header > .cs-post-category-solid > a:hover{
     padding-top:10px !important;
 }
 
+.wpp-list li{
+    
+    margin-top:14px;
+
+}
+
+.wpp-date{
+    
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.wpp-category{
+    
+    font-size: 11px;
+    background:#8A8B8C;
+    padding:4px;
+    color:white;
+}
+
+.wpp-category a{
+    
+    color:white;
+    text-transform: uppercase;
+}
+
+.cs-post-category-empty a{
+    
+    margin-right: 10px;
+    font-size:10px;
+    padding: 4px;
+}
+
+.cs-post-category-empty a:after{
+    
+    display: none;
+}
+
+.category .cs-col-12-of-12{
+    margin-bottom: -40px;
+}
+
+.cs-prev-post span{
+    
+    display:none;
+}
+
+.cs-next-post span{
+    
+    display:none;
+}
+
+.widget_poll_wid h3{
+    
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.poll_list input{
+    
+    margin-right: 10px !important;
+    margin-top:7px !important;
+    
+}
+
+.poll_wrap input[type="submit"]{
+    
+   
+    margin-top:15px !important;
+    background-color: #8A8B8C;
+    
+}
+
+.poll_wrap a{
+    
+    margin-top:5px !important;
+    color: black;
+    
+}
+
+.poll_wrap a:hover{
+    
+    color: black;
+    
+    
+}
+
+.poll_wrap label{
+    
+    width:100%;
+}
+
+#poll_ans_1 a{
+    
+    color:black;
+    margin-top:5px;
+    display:block;
+}
+
+.cs-prev-post a:hover{
+    
+    color:black;
+}
+
+
+.cs-post-block-title a:hover{
+    
+    text-decoration: none;
+}
 
 
 
+.container-hpgallery a:hover{
+    
+    text-decoration: none;
+}
 
+.single-workingplaces .cs-single-post-tags a{
+    
+    color: white!important;
+    font-size:14px;
+    background: #8A8B8C;
+    padding: 3px;
+}
+
+.single-workingplaces .cs-single-post-tags span{
+    
+    display: none;
+}
+
+.post-type-archive-workingplaces .cs-page-title{
+    
+    display:none;
+}
+
+.post-type-archive-workingplaces .cs-post-meta-date{
+    
+    display:none;
+}
+
+.post-type-archive-workingplaces .cs-post-meta-author{
+    
+    display: none;
+}
+
+.post-type-archive-workingplaces .cs-post-inner h3{
+    
+    font-size:15px;
+}

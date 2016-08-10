@@ -14,6 +14,7 @@
 <div class="cs-row">
     <?php if($title) { ?>
         <div class="cs-col cs-col-12-of-12">
+            
             <!-- Post block title Category -->
             <div class="cs-post-block-title" style="border-left-color: #<?php echo esc_attr($color);?>;">
                 <h4>
@@ -59,6 +60,10 @@
                         <div class="cs-post-item<?php echo esc_attr($class);?>">
                             
                              <a href="<?php the_permalink();?>">
+                                 
+                                 
+                                  
+                                 
                             <div class="cs-post-thumb">
                                 <?php
                                     if( $df_post->compare( get_the_ID(), 'post_category' ) == "1" && $categories && ( $df_post->get_cat_icon($categories[$cat_id]->term_id) && $df_post->get_cat_icon($categories[$cat_id]->term_id) != "no-icon" ) ) { 
@@ -76,11 +81,15 @@
                             </div>
                              </a>
                             <div class="cs-post-inner">
+                                
                                 <h3>
                                     <a href="<?php the_permalink();?>">
                                         <?php the_title();?>
                                     </a>
-                                </h3>                               
+                                </h3>
+                                
+                                 
+                                
                                 <div class="cs-post-meta cs-clearfix">
                                     
                                     <?php if( $df_post->compare( get_the_ID(), 'post_date' ) == "1" ) { ?>
