@@ -159,27 +159,24 @@
                     <?php } ?>
                <div class="cs-post-inner">
                         <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+                        <?php if(get_post_type(get_the_ID()) === 'workingplaces') : ?>
                         <div class="workingplaces-company">
-                            <?php if(get_post_type(get_the_ID()) === 'workingplaces') : ?>
-                                <?php if(get_field('spolecnost', get_the_ID())) : ?>
-                                    <?php echo get_field('spolecnost', get_the_ID()); ?>
 
-                                <?php endif; ?>                   
+                                    <?php if(get_field('spolecnost', get_the_ID())) : ?>
+                                        <?php echo get_field('spolecnost', get_the_ID()); ?>
 
-                            <?php endif; ?>
-                        </p>
-                        </div>
-                        <div class="workingplaces-company">
-                            <?php if(get_post_type(get_the_ID()) === 'action') : ?>
-                                <?php
-                                    $date = new DateTime(get_field('datum_akce'));
-                                    echo $date->format('d. m. Y'); 
-                                 ?>
-                                                    
-                
-                            <?php endif; ?>
-                        </p>
-                        </div>
+                                    <?php endif; ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if(get_post_type(get_the_ID()) === 'action') : ?>
+                            <div class="workingplaces-company">
+
+                                    <?php
+                                        $date = new DateTime(get_field('datum_akce'));
+                                        echo $date->format('d. m. Y'); 
+                                     ?>
+                            </div>
+                        <?php endif; ?>
                         <div class="cs-post-meta cs-clearfix">
 			               
 			                <?php if( $df_post->compare( get_the_ID(), 'post_date' ) == "1" ) { ?>
