@@ -39,9 +39,37 @@ function create_posttype() {
                         'supports' => array( 'title','editor','custom-fields'),
                         'menu_icon' => 'dashicons-admin-users',
                         'rewrite' => array('slug' => 'pracovni-mista'),
-                        'taxonomies' => array('post_tag'),
 		)
 	);
+        
+        $labels = array(
+            'name' => 'Profese',
+            'singular_name' => 'Profese',
+            'search_items' =>  'Hledat profese',
+            'popular_items' => 'Oblíbené Profese',
+            'all_items' => 'Všechny Profese',
+            'parent_item' => null,
+            'parent_item_colon' => null,
+            'edit_item' => 'Editovat Profese',
+            'update_item' => 'Uložit Profesi',
+            'add_new_item' => 'Přidat Profesi',
+            'new_item_name' => 'Nové jméno Profese',
+            'separate_items_with_commas' => 'Oddělte Profese čárkami',
+            'add_or_remove_items' => 'Přidat nebo Odebrat Profese',
+            'choose_from_most_used' => 'Zvolit z nejčastěji používaných Profesí',
+            'menu_name' => 'Profese' 
+        ); 
+        
+        register_taxonomy('profession',array(
+            'hierarchical' => false,
+            'labels' => $labels,
+            'show_ui' => true,
+            'show_admin_column' => true,
+            'update_count_callback' => '_update_post_term_count',
+            'query_var' => true,
+            'rewrite' => array( 'slug' => 'profese' ),
+        ));
+        
         
         register_post_type( 'action',
 	// CPT Options
