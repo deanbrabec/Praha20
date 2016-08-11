@@ -58,25 +58,18 @@
 	?>
 		<div class="<?php echo esc_attr($post_wrap_class); ?>">
                     
-                    otp
+                    noigb
                     
                     <?php $terms = wp_get_post_terms( $post_id, $profession );
                 
                             foreach($terms as $term){
                                 
                                 echo $term;
-                            };
+                            }; 
                     
                     
                     ?>
-                    
-                    
-                    
-                   
-                    
-                    
-                    
-                    
+             
                     
 	<?php
 
