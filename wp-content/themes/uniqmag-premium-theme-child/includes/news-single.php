@@ -63,6 +63,7 @@
                      <?php echo get_field('spolecnost'); ?>
                 </div>
                 
+                
                 <div class="action-date">
                  
                 <?php
