@@ -60,6 +60,25 @@
                     
                     
                     
+                    <?php $terms = wp_get_post_terms( $post_id, $profession );
+                    
+                            
+                    
+                            foreach($terms as $term){
+                                
+                                echo $term;
+                            }
+                    
+                    
+                    ?>
+                    
+                    
+                    
+                   
+                    
+                    
+                    
+                    
                     
 	<?php
 
@@ -147,15 +166,13 @@
 	                        <?php get_template_part(UNIQMAG_DIFFERENT_THEME_LOOP."image"); ?>
 	                    </div>
                     <?php } ?>
-                    
-
                <div class="cs-post-inner">
                         <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
                         <div class="workingplaces-company">
                             <?php if(get_post_type(get_the_ID()) === 'workingplaces') : ?>
                                 <?php if(get_field('spolecnost', get_the_ID())) : ?>
                                     <?php echo get_field('spolecnost', get_the_ID()); ?>
-                                <?php endif; ?>                           
+                                <?php endif; ?>
                             <?php endif; ?>
                         </p>
                         </div>

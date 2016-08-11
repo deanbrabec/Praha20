@@ -979,12 +979,9 @@ header > .cs-post-category-solid > a:hover{
     text-decoration: none;
 }
 
-.single-workingplaces .cs-single-post-tags a{
+.single-workingplaces .cs-single-post-tags{
     
-    color: white!important;
-    font-size:14px;
-    background: #8A8B8C;
-    padding: 3px;
+    display:none;
 }
 
 .single-workingplaces .cs-single-post-tags span{
