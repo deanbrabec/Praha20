@@ -60,12 +60,11 @@ function create_posttype() {
             'menu_name' => 'Profese'   
         ); 
         
-        register_taxonomy('profession',array(
+        register_taxonomy('profession','workingplaces',array(
             'hierarchical' => false,
             'labels' => $labels,
             'show_ui' => true,
             'show_admin_column' => true,
-            'update_count_callback' => '_update_post_term_count',
             'query_var' => true,
             'rewrite' => array( 'slug' => 'profese' ),
         ));
