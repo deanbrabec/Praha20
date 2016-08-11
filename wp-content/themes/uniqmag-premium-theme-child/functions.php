@@ -57,15 +57,14 @@ function create_posttype() {
             'separate_items_with_commas' => 'Oddělte Profese čárkami',
             'add_or_remove_items' => 'Přidat nebo Odebrat Profese',
             'choose_from_most_used' => 'Zvolit z nejčastěji používaných Profesí',
-            'menu_name' => 'Profese' 
+            'menu_name' => 'Profese'  
         ); 
         
-        register_taxonomy('profession',array(
+        register_taxonomy('profession','workingplaces',array(
             'hierarchical' => false,
             'labels' => $labels,
             'show_ui' => true,
             'show_admin_column' => true,
-            'update_count_callback' => '_update_post_term_count',
             'query_var' => true,
             'rewrite' => array( 'slug' => 'profese' ),
         ));
