@@ -147,15 +147,29 @@
 	                        <?php get_template_part(UNIQMAG_DIFFERENT_THEME_LOOP."image"); ?>
 	                    </div>
                     <?php } ?>
-                    <div class="cs-post-inner">
+                    
+
+               <div class="cs-post-inner">
                         <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
-                        <p>
+                        <div class="workingplaces-company">
                             <?php if(get_post_type(get_the_ID()) === 'workingplaces') : ?>
                                 <?php if(get_field('spolecnost', get_the_ID())) : ?>
                                     <?php echo get_field('spolecnost', get_the_ID()); ?>
-                                <?php endif; ?>
+                                <?php endif; ?>                           
                             <?php endif; ?>
                         </p>
+                        </div>
+                        <div class="workingplaces-company">
+                            <?php if(get_post_type(get_the_ID()) === 'action') : ?>
+                                <?php
+                                    $date = new DateTime(get_field('datum_akce'));
+                                    echo $date->format('d. m. Y'); 
+                                 ?>
+                                                    
+                
+                            <?php endif; ?>
+                        </p>
+                        </div>
                         <div class="cs-post-meta cs-clearfix">
 			               
 			                <?php if( $df_post->compare( get_the_ID(), 'post_date' ) == "1" ) { ?>
@@ -193,6 +207,8 @@
 		                            <?php } ?>
 		                        </div>
 		                    <?php } ?>
+                            
+                         
                             
                             <?php if( $avarage_rating ) { ?>
 	                            <span class="cs-post-meta-rating" title="<?php printf ( esc_attr__('Rated %1$s out of %2$s','uniqmag'), floatval($avarage_rating[1]), intval($df_ratings::$max_val));?>">
